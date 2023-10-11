@@ -1,6 +1,6 @@
 const express = require("express");
-const dbConnect = require("./db/connect.js");
-const Product = require("./db/models/Product.js");
+const dbConnect = require("../db/connect.js");
+const Product = require("../db/models/Product.js");
 const PORT = 8000 || process.env.PORT;
 
 const app = express();
@@ -15,7 +15,7 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
   res.send("API running 🥳, Please Route to /api/v1/products for data");
 });
-app.get("/api/products", async (req, res) => {
+app.get("/api", async (req, res) => {
   try {
     const allProducts = await Product.find();
     res.status(200).json(allProducts);
@@ -24,7 +24,7 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
-app.get("/api/v1/products/:id", async (req, res) => {
+app.get("/api/products/:id", async (req, res) => {
   try {
     const productWithID = await Product.findById(req.params.id);
     res.status(200).json(productWithID);
