@@ -15,7 +15,7 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
   res.send("API running 🥳, Please Route to /api/v1/products for data");
 });
-app.get("/api", async (req, res) => {
+app.get("/api/products", async (req, res) => {
   try {
     const allProducts = await Product.find();
     res.status(200).json(allProducts);
