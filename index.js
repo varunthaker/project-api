@@ -1,6 +1,6 @@
 const express = require("express");
-const dbConnect = require("../db/connect.js");
-const Product = require("../db/models/Product.js");
+const dbConnect = require("./db/connect.js");
+const Product = require("./db/models/Product.js");
 const PORT = 8000 || process.env.PORT;
 
 const app = express();
