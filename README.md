@@ -26,7 +26,7 @@ GET | /api/v1/products/id | To get product information with the specific id
 * [Mongoose ODM](https://mongoosejs.com/) This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.
   
 ### Web
-* [End Point](https://project-api-7svg.onrender.com/)]
+* [End Point](https://project-api-7svg.onrender.com/)
   
 ### License
 It's open source project
