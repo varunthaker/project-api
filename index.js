@@ -14,7 +14,7 @@ app.listen(PORT, () => {
 
 app.get("/", (req, res) => {
   res.send(
-    "API is running 🥳, Please redirect to Route '/api/v1/products' to fetch data"
+    "<h2>API is running...!, Please redirect to 'https://project-api-7svg.onrender.com/api/v1/products' for all Products</h2>"
   );
 });
 app.get("/api/v1/products", async (req, res) => {
