@@ -5,7 +5,7 @@
 The API endpoint gives the data for 15 products and gives the product detail for specific id.
 
 ### Installation Guide
-* Clone this repository [here](https://github.com/blackdevelopa/ProjectSupport.git](https://github.com/varunthaker/project-api.git).
+* Clone this repository [here](https://github.com/varunthaker/project-api.git).
 * Run npm install to install all dependencies
 * You can either work with the online mongoDB database or use your locally installed MongoDB. Do configure to your choice in the application entry file.
 * Create an .env file in your project root folder and add your variables.
@@ -26,7 +26,7 @@ GET | /api/v1/products/id | To get product information with the specific id
 * [Mongoose ODM](https://mongoosejs.com/) This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.
   
 ### Web
-* [End Point](https://github.com/blackdevelopa](https://project-api-7svg.onrender.com/)
+* [End Point](https://project-api-7svg.onrender.com/)]
   
 ### License
 It's open source project
